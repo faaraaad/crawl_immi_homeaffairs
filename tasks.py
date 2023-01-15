@@ -13,6 +13,6 @@ file_lock = Lock()
 @app.task
 def write_to_file(filename, data):
     with file_lock:
-        with open(filename, 'a') as f:
+        with open(filename + ".txt", 'a') as f:
 
             f.write(data + "\n")
