@@ -121,3 +121,7 @@ local_packages/*
 *.sqlite
 *.sqlite3
 *.sqlite3-journal
+
+# Temporary backup directory for branch migration
+_temp_backup/
+
